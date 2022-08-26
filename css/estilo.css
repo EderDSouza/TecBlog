@@ -11,28 +11,42 @@ body{
 
 #cabecalho {
     text-align: center;
-    border: 1px solid red;
     background-color: #f7b600;
 }
 
 /*aplicando hover nos links quando coloco 
 mause ele troca de cor**/
 
-
-
-a:link, a:visited{
-    color: #fff;
-    padding: 8px 12px;
+a {
+    text-decoration: none;
 }
 
-a:hover{
+a:link,  a:visited{
     color: #f7b600;
-    background: #fff;
+    
+}
+
+#menu a:hover{
+    
+   text-decoration: underline;
 }
 
 a {
     text-decoration: none;
 }
+
+#menu a:link, #menu a:visited{
+    color: #fff;
+    padding: 8px 12px;
+}
+
+#menu a:hover{
+
+    color: #f7b600;
+    background: #fff;
+}
+
+
 
 
 h1 {
@@ -40,10 +54,27 @@ h1 {
     color: #4e4e4e;
    
 }
+h2 {
+    color: #f7b600;
+}
+h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+ul {
+    color: #f78c00;
+    padding: 10px;
+    
+}
+li{
+    padding: 10px;
+    list-style: none;
+}
 
 #logo {
     padding: 10px;
-    border: 1px solid blue;
+    
     
 }
 
@@ -53,33 +84,56 @@ h1 {
 
 #menu {
     padding: 10px;
-    border: 1px solid white;
+    
     
 }
 
 #corpo {
-    background-color: white;
+    background-color: #fff;
+    padding: 15px;
     width: 920px;
-    margin: 10 auto;
+    margin: 0 auto;
 }
 
 
 #corpoPostagem{
     width: 660px;
     float: left;
-    background-color: #4e4e4e;
+    
 }
 
-#lateral {
-    background-color: green;
+#corpo-lateral {
+    
     width: 240px;
     float: right;
 
 
 }
+.postagemEFotos{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+.dataPostagem {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: block;
+    
+}
 
 img{
-    width: 660px;
+    width: 640px;
+}
+
+.lateral{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.lateral-texto{
+    font-size: 0.8em;
+    padding: 15px;
 }
 
 /*clear both retira elementos fluantes */
@@ -90,4 +144,5 @@ img{
     padding: 15px;
     text-align: center;
     background-color: #CCC;
+    width: auto;
 }
