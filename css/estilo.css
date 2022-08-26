@@ -10,29 +10,84 @@ body{
 }
 
 #cabecalho {
+    text-align: center;
     border: 1px solid red;
-    background-color: rgb(255, 251, 0);
+    background-color: #f7b600;
 }
 
+/*aplicando hover nos links quando coloco 
+mause ele troca de cor**/
+
+
+
+a:link, a:visited{
+    color: #fff;
+    padding: 8px 12px;
+}
+
+a:hover{
+    color: #f7b600;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 h1 {
-    text-align: center;
+    font-size: 2.5em;
+    color: #4e4e4e;
+   
 }
 
 #logo {
+    padding: 10px;
     border: 1px solid blue;
     
 }
 
+.logobranco{
+    color: white;
+}
+
 #menu {
+    padding: 10px;
     border: 1px solid white;
     
 }
 
 #corpo {
-    background-color: gray;
-    width: 900px;
-    height: 500px;
+    background-color: white;
+    width: 920px;
+    margin: 10 auto;
 }
-a {
-    
+
+
+#corpoPostagem{
+    width: 660px;
+    float: left;
+    background-color: #4e4e4e;
+}
+
+#lateral {
+    background-color: green;
+    width: 240px;
+    float: right;
+
+
+}
+
+img{
+    width: 660px;
+}
+
+/*clear both retira elementos fluantes */
+
+#rodape{
+   
+    clear: both;
+    padding: 15px;
+    text-align: center;
+    background-color: #CCC;
 }
